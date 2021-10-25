@@ -9,7 +9,8 @@ namespace ConsoleApp1.Abstract
     {
         public virtual void Save(Customer customer)
         {
-            Console.WriteLine("Saved to db: "+customer.FirstName);
+            Console.WriteLine("Saved to db: " + customer.FirstName);
         }
+        public abstract void Delete(Customer customer);
     }
 }

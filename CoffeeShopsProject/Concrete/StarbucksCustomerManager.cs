@@ -14,6 +14,12 @@ namespace ConsoleApp1.Concrete
         {
             _customerCheckService= customerCheckService;
         }
+
+        public override void Delete(Customer customer)
+        {
+            throw new NotImplementedException();
+        }
+
         public override void Save(Customer customer)
         {
             if(_customerCheckService.CheckIfRealPerson(customer))
